@@ -1,67 +1,67 @@
-import React from "react";
-import cv from "../../public/assets/portfolio/cv.png";
-import vaka from "../../public/assets/portfolio/vaka.png";
-import bus from "../../public/assets/portfolio/bus.png";
-import flyer1 from "../../public/assets/portfolio/flyer1.jpg";
-import flyer2 from "../../public/assets/portfolio/flyer2.jpg";
-import logo1 from "../../public/assets/portfolio/logo1.jpg";
-import logo2 from "../../public/assets/portfolio/logo2.jpg";
+import React from 'react';
+import cv from '../../public/assets/portfolio/cv.png';
+import vaka from '../../public/assets/portfolio/vaka.png';
+import bus from '../../public/assets/portfolio/bus.png';
+import flyer1 from '../../public/assets/portfolio/flyer1.jpg';
+import flyer2 from '../../public/assets/portfolio/flyer2.jpg';
+import logo1 from '../../public/assets/portfolio/logo1.jpg';
+import logo2 from '../../public/assets/portfolio/logo2.jpg';
 
-import { FaGithub } from "react-icons/fa";
-import { AiOutlineCaretRight } from "react-icons/ai";
-import { BiChevronLeft } from "react-icons/bi";
-import Link from "next/link";
-import Image from "next/image";
-import  portfolio  from 'public/assets/portfolio/portfolio.png';
+import { FaGithub } from 'react-icons/fa';
+import { AiOutlineCaretRight } from 'react-icons/ai';
+import { BiChevronLeft } from 'react-icons/bi';
+import Link from 'next/link';
+import Image from 'next/image';
+import portfolio from 'public/assets/portfolio/portfolio.png';
 
 const portfolios = [
   {
     id: 1,
-    title: "Bus Ranking System",
+    title: 'Bus Ranking System',
     imageSrc: bus,
-    url: "bus",
+    url: 'bus',
   },
   {
     id: 2,
-    title: "Prosper Mudondo Portfolio",
+    title: 'Prosper Mudondo Portfolio',
     imageSrc: portfolio,
-    url: "portfolio",
+    url: 'portfolio',
   },
   {
     id: 3,
-    title: "Vaka Responsive Website",
+    title: 'Vaka Responsive Website',
     imageSrc: vaka,
-    url: "vaka",
+    url: 'vaka',
   },
   {
     id: 4,
-    title: "Resume Using Tailwindcss",
+    title: 'Resume Using Tailwindcss',
     imageSrc: cv,
-    url: "cv",
+    url: 'cv',
   },
   {
     id: 5,
-    title: "Cement Flyer",
+    title: 'Cement Flyer',
     imageSrc: flyer1,
-    url: "flyer1",
+    url: 'flyer1',
   },
   {
     id: 6,
-    title: "RedWood Kitchen Logo",
+    title: 'RedWood Kitchen Logo',
     imageSrc: logo1,
-    url: "logo1",
+    url: 'logo1',
   },
   {
     id: 5,
-    title: "Holiday Flyer",
+    title: 'Holiday Flyer',
     imageSrc: flyer2,
-    url: "flyer2",
+    url: 'flyer2',
   },
   {
     id: 5,
-    title: "PFM Logo",
+    title: 'PFM Logo',
     imageSrc: logo2,
-    url: "logo2",
+    url: 'logo2',
   },
 ];
 
@@ -110,9 +110,7 @@ const OnePortfolio = ({ portfolio: { title, imageSrc } }) => {
           Description
         </h2>
 
-        <p>
-          Click on any of the buttons below for more information.
-        </p>
+        <p>Click on any of the buttons below for more information.</p>
 
         <div className="flex items-center justify-center gap-10">
           <Link href="/">

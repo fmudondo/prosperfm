@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 import {
   FaBars,
@@ -7,15 +7,15 @@ import {
   FaFacebook,
   FaGithub,
   FaTwitter,
-  FaWhatsapp, 
-} from "react-icons/fa";
+  FaWhatsapp,
+} from 'react-icons/fa';
 
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
   const [pageScroll, setPageScroll] = useState(false);
 
   useEffect(() => {
-    const sub = window.addEventListener("scroll", () =>
+    const sub = window.addEventListener('scroll', () =>
       setPageScroll(window.scrollY >= 90)
     );
 
@@ -25,41 +25,40 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "home",
+      link: 'home',
     },
     {
       id: 2,
-      link: "portfolio",
+      link: 'portfolio',
     },
     {
       id: 3,
-      link: "experience",
+      link: 'experience',
     },
     {
       id: 4,
-      link: "design",
+      link: 'design',
     },
     {
       id: 5,
-      link: "about",
+      link: 'about',
     },
     {
       id: 6,
-      link: "contact",
+      link: 'contact',
     },
-   
   ];
 
   return (
     <div
       className={`w-full h-20 z-10 fixed bg-orange-200 text-black duration-300 ease-in ${
-        pageScroll && "bg-black text-[#fff]"
+        pageScroll && 'bg-black text-[#fff]'
       }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
         <Link href="/#home">
           <h1 className="h-32 w-32 mt-14 ml-12">
-          <img src={'/assets/pfm.png'} alt="" />
+            <img src={'/assets/pfm.png'} alt="" />
           </h1>
         </Link>
 
@@ -88,15 +87,15 @@ const Navbar = () => {
       <div
         className={
           navigation
-            ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur"
-            : ""
+            ? 'md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur'
+            : ''
         }
       >
         <div
           className={
             navigation
-              ? "fixed left-0 top-0 w-4/5 h-full bg-gradient-to-bl from-orange-600 to-gray-400 text-black p-10 ease-in duration-500"
-              : "fixed top-0 left-[-100%] p-10 h-full ease-in duration-500"
+              ? 'fixed left-0 top-0 w-4/5 h-full bg-gradient-to-bl from-orange-600 to-gray-400 text-black p-10 ease-in duration-500'
+              : 'fixed top-0 left-[-100%] p-10 h-full ease-in duration-500'
           }
         >
           <div>
@@ -134,31 +133,29 @@ const Navbar = () => {
 
             <div>
               <div className="grid grid-cols-2 mx-auto w-4/5 gap-5">
-
-                 <Link href="https://wa.me/qr/Y3V2XP2AMLZJB1">
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
-                  <FaWhatsapp size={25} />
-                </div>
+                <Link href="https://wa.me/qr/Y3V2XP2AMLZJB1">
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
+                    <FaWhatsapp size={25} />
+                  </div>
                 </Link>
-                 
+
                 <Link href="https://www.facebook.com/prosper.mudondo.7">
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
-                  <FaFacebook size={25} />
-                </div>
-                </Link>
-                
-                 <Link href="https://www.twitter.com/@mudondoprosper">
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
-                  <FaTwitter size={25} />
-                </div>
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
+                    <FaFacebook size={25} />
+                  </div>
                 </Link>
 
-                 <Link href="https://github.com/fmudondo">
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
-                  <FaGithub size={25} />
-                </div>
+                <Link href="https://www.twitter.com/@mudondoprosper">
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
+                    <FaTwitter size={25} />
+                  </div>
                 </Link>
 
+                <Link href="https://github.com/fmudondo">
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 bg-orange-800 p-3 cursor-pointer">
+                    <FaGithub size={25} />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

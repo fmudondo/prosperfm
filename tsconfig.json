@@ -19,6 +19,22 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/index.jsx",
+    "pages/_document.jsx",
+    "pages/_app.jsx",
+    "pages/portfolio/index.jsx",
+    "pages/portfolio/[id].jsx",
+    "components/Portfolio.jsx",
+    "components/Navbar.jsx",
+    "components/HomePage.jsx",
+    "components/Experience.jsx",
+    "components/design.jsx",
+    "components/Contact.jsx",
+    "components/About.jsx"
+  ],
   "exclude": ["node_modules"]
 }
