@@ -13,8 +13,8 @@ const About = () => {
 
         <div className="shadow-xl shadow-blue-300 my-8 px-8 rounded-md bg-orange-800">
           <p className="py-4 max-w-2xl mx-auto">
-          My name is Prosper Farai Mudondo. I am an undergraduate student at Harare Institute of Technology (HIT University) 
-          and I am currently in my third year, pursuing a Bachelor’s Technology Honors Degree in Electronic Commerce. 
+          My name is Prosper Farai Mudondo. I am a recent graduate from Harare Institute of Technology (HIT University) 
+          who persued a Bachelor’s Technology Honors Degree in Electronic Commerce. 
           </p>
           <p className="py-4 max-w-2xl mx-auto">
             I studied my primary at Daramombe Primary School from grade 1-4. I studied my grade 5 at Thornicroft Park Primary. 

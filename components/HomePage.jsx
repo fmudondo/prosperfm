@@ -23,9 +23,9 @@ const HomePage = () => {
           full stack developer
         </h1>
         <p className="text-black max-w-sm mx-auto text-center text-lg">
-          My name is Prosper Farai Mudondo, an undergraduate student at Harare
-          Institute of Technology (HIT) persuing Honors Technology Degree in
-          Electronic Commerce.
+          My name is Prosper Farai Mudondo. I am a recent graduate from Harare
+          Institute of Technology (HIT University) who persued a Bachelor’s
+          Technology Honors Degree in Electronic Commerce.
         </p>
 
         <Link href="/#About Me">
